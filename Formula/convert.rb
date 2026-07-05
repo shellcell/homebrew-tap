@@ -29,6 +29,6 @@ class Convert < Formula
   end
 
   def install
-    bin.install "convert"
+    bin.install "cnvrt"
   end
 end
