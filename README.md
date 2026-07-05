@@ -6,12 +6,14 @@ Homebrew tap for:
 |---------|-------------|
 | [exex](https://github.com/rabarbra/exex) | Terminal UI for exploring ELF, Mach-O and PE binaries |
 | [ttysvg](https://github.com/rabarbra/ttysvg) | Record terminal sessions as SVG animations |
+| [convert](https://github.com/shellcell/convert) | An interactive Go CLI for file conversion |
 
 ## Install
 
 ```sh
 brew install exex-org/tap/exex
 brew install exex-org/tap/ttysvg
+brew install exex-org/tap/convert
 ```
 
 Or tap first, then install:
@@ -20,6 +22,7 @@ Or tap first, then install:
 brew tap exex-org/tap
 brew install exex
 brew install ttysvg
+brew install convert
 ```
 
 ## Upgrade
@@ -27,6 +30,7 @@ brew install ttysvg
 ```sh
 brew upgrade exex
 brew upgrade ttysvg
+brew upgrade convert
 ```
 
 ## Supported platforms
