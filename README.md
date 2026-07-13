@@ -6,7 +6,7 @@ Homebrew tap for:
 |---------|-------------|
 | [exex](https://github.com/rabarbra/exex) | Terminal UI for exploring ELF, Mach-O and PE binaries |
 | [ttysvg](https://github.com/rabarbra/ttysvg) | Record terminal sessions as SVG animations |
-| [cnvrt](https://github.com/shellcell/convert) | An interactive Go CLI for file conversion |
+| [cnvrt](https://github.com/shellcell/cnvrt) | An interactive Go CLI for file conversion |
 | [snailrace](https://github.com/shellcell/snailrace) | Benchmarking tool |
 
 ## Install
