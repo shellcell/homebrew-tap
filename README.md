@@ -7,6 +7,7 @@ Homebrew tap for:
 | [exex](https://github.com/rabarbra/exex) | Terminal UI for exploring ELF, Mach-O and PE binaries |
 | [ttysvg](https://github.com/rabarbra/ttysvg) | Record terminal sessions as SVG animations |
 | [cnvrt](https://github.com/shellcell/convert) | An interactive Go CLI for file conversion |
+| [snailrace](https://github.com/shellcell/snailrace) | Benchmarking tool |
 
 ## Install
 
@@ -14,6 +15,7 @@ Homebrew tap for:
 brew install exex-org/tap/exex
 brew install exex-org/tap/ttysvg
 brew install exex-org/tap/cnvrt
+brew install exex-org/tap/snailrace
 ```
 
 Or tap first, then install:
@@ -23,6 +25,7 @@ brew tap exex-org/tap
 brew install exex
 brew install ttysvg
 brew install cnvrt
+brew install snailrace
 ```
 
 ## Upgrade
@@ -31,6 +34,7 @@ brew install cnvrt
 brew upgrade exex
 brew upgrade ttysvg
 brew upgrade cnvrt
+brew upgrade snailrace
 ```
 
 ## Supported platforms
