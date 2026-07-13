@@ -12,16 +12,16 @@ Homebrew tap for:
 ## Install
 
 ```sh
-brew install exex-org/tap/exex
-brew install exex-org/tap/ttysvg
-brew install exex-org/tap/cnvrt
-brew install exex-org/tap/snailrace
+brew install shellcell/tap/exex
+brew install shellcell/tap/ttysvg
+brew install shellcell/tap/cnvrt
+brew install shellcell/tap/snailrace
 ```
 
 Or tap first, then install:
 
 ```sh
-brew tap exex-org/tap
+brew tap shellcell/tap
 brew install exex
 brew install ttysvg
 brew install cnvrt
