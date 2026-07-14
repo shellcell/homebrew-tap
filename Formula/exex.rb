@@ -1,28 +1,28 @@
 class Exex < Formula
   desc "Terminal UI for exploring ELF, Mach-O and PE binaries"
   homepage "https://github.com/shellcell/exex"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/shellcell/exex/releases/download/v#{version}/exex-v#{version}-darwin-arm64.tar.gz"
-      sha256 "11e81e09b1b33c577fe12ffc7e22c70320b1e814b94f6442ff93a7e2c11e8d8c"
+      sha256 "bd4d6a67c0cf005300f866a5119dad4e4557ffc8b0f0661b9ced029d4bcbc47a"
     end
     on_intel do
       url "https://github.com/shellcell/exex/releases/download/v#{version}/exex-v#{version}-darwin-amd64.tar.gz"
-      sha256 "c002d5484f554e4b48779f455427800e0f1cf3bf98cc79a529fbff9d93e16a2e"
+      sha256 "26ac9567ae86a752b036c03ee48849729ef780bccd0ff611840d5f50e9232cd0"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/shellcell/exex/releases/download/v#{version}/exex-v#{version}-linux-arm64.tar.gz"
-      sha256 "fc936b2c94c722c5deb386ace954e716838d302747181877fbb946f1f5bab889"
+      sha256 "3e92e3a155264a587155c273866edc6d479990023109d89793da909fab526fd3"
     end
     on_intel do
       url "https://github.com/shellcell/exex/releases/download/v#{version}/exex-v#{version}-linux-amd64.tar.gz"
-      sha256 "a57be5fb6bdff5b5d65cf0d7790e9e95de48acae5b3371a80fab2df61c6b03f8"
+      sha256 "a87275adc2440df2c75bf4401c71e74cc7da62b1b3bef33e47a7d8fbe196af19"
     end
   end
 
