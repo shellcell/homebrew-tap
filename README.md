@@ -5,7 +5,7 @@ Homebrew tap for:
 | Formula | Description |
 |---------|-------------|
 | [exex](https://github.com/rabarbra/exex) | Terminal UI for exploring ELF, Mach-O and PE binaries |
-| [ttysvg](https://github.com/rabarbra/ttysvg) | Record terminal sessions as SVG animations |
+| [ttysvg](https://github.com/shellcell/ttysvg) | Record terminal sessions as SVG animations |
 | [cnvrt](https://github.com/shellcell/cnvrt) | An interactive Go CLI for file conversion |
 | [snailrace](https://github.com/shellcell/snailrace) | Benchmarking tool |
 
@@ -61,5 +61,5 @@ documentation, key bindings and the colour/theme schema.
 ttysvg -o demo.svg
 ```
 
-See the upstream [README](https://github.com/rabarbra/ttysvg) for full ttysvg
+See the upstream [README](https://github.com/shellcell/ttysvg) for full ttysvg
 documentation.
