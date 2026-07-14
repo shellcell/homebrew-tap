@@ -1,30 +1,30 @@
 class Ttysvg < Formula
   desc "Record terminal sessions as SVG animations"
   homepage "https://github.com/shellcell/ttysvg"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/shellcell/ttysvg/releases/download/v#{version}/ttysvg_v#{version}_macos_arm64.tar.gz"
-      sha256 "909fbcd1c0bc399481ec493440cb1135963e8adc42e32562f930be34722ba021"
+      sha256 "47f1cdbb2971ca19502add5a123d422ed6b9e74f6f5fc47690d5e1904572a62e"
     end
 
     on_intel do
       url "https://github.com/shellcell/ttysvg/releases/download/v#{version}/ttysvg_v#{version}_macos_x86_64.tar.gz"
-      sha256 "3ef9675fdf03defcea8494c8b8a84e36803334d4ed88d0a44d48b3bcdf46e1e3"
+      sha256 "9ad6e755c0897d16929c14b8030e356649596ccfad1fd18645250c1095ce8dd8"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/shellcell/ttysvg/releases/download/v#{version}/ttysvg_v#{version}_linux_arm64.tar.gz"
-      sha256 "c24d171e6c049ec62d491e451a7b798a2882c0c7ea17f99904110b1ef9c83803"
+      sha256 "9164d5eca065c8abaef173426d6db925dd3803e12a5f5850c25e3217dc2ca40e"
     end
 
     on_intel do
       url "https://github.com/shellcell/ttysvg/releases/download/v#{version}/ttysvg_v#{version}_linux_x86_64.tar.gz"
-      sha256 "1fbcf340733fd23d03ad4091c788c5badfd0a4e69b1073d212b15b03172ec005"
+      sha256 "60e26bb90f07a13ff899865b055ee668cd59128f864640536daa886a6845dc6a"
     end
   end
 
