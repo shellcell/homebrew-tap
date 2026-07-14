@@ -4,7 +4,7 @@ Homebrew tap for:
 
 | Formula | Description |
 |---------|-------------|
-| [exex](https://github.com/rabarbra/exex) | Terminal UI for exploring ELF, Mach-O and PE binaries |
+| [exex](https://github.com/shellcell/exex) | Terminal UI for exploring ELF, Mach-O and PE binaries |
 | [ttysvg](https://github.com/shellcell/ttysvg) | Record terminal sessions as SVG animations |
 | [cnvrt](https://github.com/shellcell/cnvrt) | An interactive Go CLI for file conversion |
 | [snailrace](https://github.com/shellcell/snailrace) | Benchmarking tool |
@@ -54,7 +54,7 @@ The example config is installed under `$(brew --prefix)/share/exex/` and the
 exex [-debug PATH] [-s STRING] [-o [VIEW]] <binary> [goto]
 ```
 
-See the upstream [README](https://github.com/rabarbra/exex) for full
+See the upstream [README](https://github.com/shellcell/exex) for full
 documentation, key bindings and the colour/theme schema.
 
 ```sh
