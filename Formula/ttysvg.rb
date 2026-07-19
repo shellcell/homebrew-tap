@@ -4,6 +4,11 @@ class Ttysvg < Formula
   version "0.1.1"
   license "MIT"
 
+  livecheck do
+    url :homepage
+    strategy :github_latest
+  end
+
   on_macos do
     on_arm do
       url "https://github.com/shellcell/ttysvg/releases/download/v#{version}/ttysvg_v#{version}_macos_arm64.tar.gz"

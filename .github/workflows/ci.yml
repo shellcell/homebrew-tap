@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks this repository out into Homebrew's tap directory.
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+        with:
+          test-bot: false
+
+      - name: brew style
+        run: brew style shellcell/tap
+
+      - name: brew audit
+        run: brew audit --strict --online --tap shellcell/tap

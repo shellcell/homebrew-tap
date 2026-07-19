@@ -4,6 +4,11 @@ class Snailrace < Formula
   version "0.0.2"
   license "MIT"
 
+  livecheck do
+    url :homepage
+    strategy :github_latest
+  end
+
   on_macos do
     on_arm do
       url "https://github.com/shellcell/snailrace/releases/download/v#{version}/snailrace-v#{version}-darwin-arm64.tar.gz"
@@ -30,7 +35,7 @@ class Snailrace < Formula
 
   def install
     bin.install "snailrace"
-    
+
     bash_completion.install "completions/snailrace.bash" => "snailrace"
     zsh_completion.install "completions/_snailrace"
     fish_completion.install "completions/snailrace.fish"

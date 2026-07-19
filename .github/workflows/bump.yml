@@ -1,0 +1,46 @@
+name: Bump formula
+
+# Fired by each project's release workflow via repository_dispatch once the
+# release assets are published; can also be run by hand from the Actions tab.
+on:
+  repository_dispatch:
+    types: [bump-formula]
+  workflow_dispatch:
+    inputs:
+      formula:
+        description: Formula name (e.g. exex)
+        required: true
+      version:
+        description: New version, with or without leading v
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    env:
+      FORMULA: ${{ github.event.client_payload.formula || inputs.formula }}
+      VERSION: ${{ github.event.client_payload.version || inputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update formula
+        run: |
+          ./scripts/bump-formula.sh "$FORMULA" "$VERSION"
+          echo "VERSION=${VERSION#v}" >> "$GITHUB_ENV"
+
+      # TAP_GITHUB_TOKEN (a PAT) rather than github.token so that the CI
+      # workflow runs on the opened PR — PRs created with the default token
+      # never trigger other workflows.
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.TAP_GITHUB_TOKEN || github.token }}
+          branch: bump-${{ env.FORMULA }}-${{ env.VERSION }}
+          commit-message: "${{ env.FORMULA }}: bump v${{ env.VERSION }}"
+          title: "${{ env.FORMULA }}: bump v${{ env.VERSION }}"
+          body: "Automated bump of `${{ env.FORMULA }}` to v${{ env.VERSION }}."
+          delete-branch: true

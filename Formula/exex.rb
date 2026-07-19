@@ -4,6 +4,11 @@ class Exex < Formula
   version "0.3.1"
   license "MIT"
 
+  livecheck do
+    url :homepage
+    strategy :github_latest
+  end
+
   on_macos do
     on_arm do
       url "https://github.com/shellcell/exex/releases/download/v#{version}/exex-v#{version}-darwin-arm64.tar.gz"

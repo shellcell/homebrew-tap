@@ -1,8 +1,13 @@
 class Cnvrt < Formula
-  desc "An interactive Go CLI for file conversion"
+  desc "Interactive CLI for file conversion"
   homepage "https://github.com/shellcell/cnvrt"
   version "0.0.1"
   license "MIT"
+
+  livecheck do
+    url :homepage
+    strategy :github_latest
+  end
 
   on_macos do
     on_arm do
