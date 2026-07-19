@@ -1,7 +1,7 @@
 class Cnvrt < Formula
   desc "Interactive CLI for file conversion"
   homepage "https://github.com/shellcell/cnvrt"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   livecheck do
@@ -12,24 +12,24 @@ class Cnvrt < Formula
   on_macos do
     on_arm do
       url "https://github.com/shellcell/cnvrt/releases/download/v#{version}/cnvrt-v#{version}-darwin-arm64.tar.gz"
-      sha256 "371431d0ef8fd3d2f07d2d9e7e3369d734be2733bbe6da4ba1b00854d3ce1617"
+      sha256 "97c649c19e38203a3a9258d45c7469784dcdbe400109f9ac6c541d30e8a79636"
     end
 
     on_intel do
       url "https://github.com/shellcell/cnvrt/releases/download/v#{version}/cnvrt-v#{version}-darwin-amd64.tar.gz"
-      sha256 "6e2fc4fc6cf762893ab7b85f3444d5899786c04fcf1f809524af8953d6fb2e3d"
+      sha256 "71ff065a17e624f73b51998401b6a12c04877cdab80fc3af45584e2d5c7a6ebe"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/shellcell/cnvrt/releases/download/v#{version}/cnvrt-v#{version}-linux-arm64.tar.gz"
-      sha256 "eaaa8cd273585360c78b94162ddcefda30159e77dd48697f0fceb610b24f3b4e"
+      sha256 "051c3761276e218ba0431efd45611fa733f60e6fd0ae60375ab4539470776535"
     end
 
     on_intel do
       url "https://github.com/shellcell/cnvrt/releases/download/v#{version}/cnvrt-v#{version}-linux-amd64.tar.gz"
-      sha256 "6e0e18815afe900562f3e4bfb3c3fbd40ed1fcfdbfda80b735ff80bb53cc50f7"
+      sha256 "516f757dbb13163b573fb26cbf36bc157d7361936ab9928ab8996b9b09cb68bf"
     end
   end
 
