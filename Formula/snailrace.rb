@@ -35,6 +35,7 @@ class Snailrace < Formula
 
   def install
     bin.install "snailrace"
+    man1.install "man/man1/snailrace.1" if File.exist?("man/man1/snailrace.1")
 
     bash_completion.install "completions/snailrace.bash" => "snailrace"
     zsh_completion.install "completions/_snailrace"

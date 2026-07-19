@@ -37,6 +37,7 @@ class Exex < Formula
     doc.install "README.md" if File.exist?("README.md")
 
     man1.install "exex.1" if File.exist?("exex.1")
+    man1.install "man/man1/exex.1" if File.exist?("man/man1/exex.1")
 
     bash_completion.install "completions/exex.bash" => "exex" if File.exist?("completions/exex.bash")
     zsh_completion.install "completions/_exex" if File.exist?("completions/_exex")
