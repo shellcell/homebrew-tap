@@ -12,24 +12,24 @@ class Ttysvg < Formula
   on_macos do
     on_arm do
       url "https://github.com/shellcell/ttysvg/releases/download/v#{version}/ttysvg-v#{version}-darwin-arm64.tar.gz"
-      sha256 "9254cbfeb57c2534f8308316eaea22bfec6015706c3cbb2b5f955c21af2102d8"
+      sha256 "122f23c3e7ab1e829927062ae92261ed4c8d82b2104e1d2de3be433b66c62ca7"
     end
 
     on_intel do
       url "https://github.com/shellcell/ttysvg/releases/download/v#{version}/ttysvg-v#{version}-darwin-amd64.tar.gz"
-      sha256 "8aa298b62f125c64760f9527064943b4e90d31c4fd5601c1b07419e32c25f0e2"
+      sha256 "9439d2ce75c180fdcaa3cdb1e262526525d3762afa7ddf250373c9cff8c0ab5a"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/shellcell/ttysvg/releases/download/v#{version}/ttysvg-v#{version}-linux-arm64.tar.gz"
-      sha256 "878e0f8ac965c81bab4ec408591fcedea117a181948ccfd1df89265c09186c4f"
+      sha256 "83ec4c913e2339efdc7d02034be360cbbe46b4794678533c0d15b545152beebe"
     end
 
     on_intel do
       url "https://github.com/shellcell/ttysvg/releases/download/v#{version}/ttysvg-v#{version}-linux-amd64.tar.gz"
-      sha256 "e7ccf3d805c079a5ef7428553e49c8b4621de0ec7cd146f85fe670a5d1706057"
+      sha256 "879c0e74357fc71673c7aa99570a41731d81d44d8b3476d93a3d23bd2716bd1f"
     end
   end
 
