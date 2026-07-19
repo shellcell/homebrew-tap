@@ -12,22 +12,22 @@ class Exex < Formula
   on_macos do
     on_arm do
       url "https://github.com/shellcell/exex/releases/download/v#{version}/exex-v#{version}-darwin-arm64.tar.gz"
-      sha256 "09b62f39c2a4aec84b965930b908db597a736d10c86da4b4856b97e27bf72f8f"
+      sha256 "50b58155c055aa550975c6738d618bbdc4a0e7bea7f6f359da809d175af25bb8"
     end
     on_intel do
       url "https://github.com/shellcell/exex/releases/download/v#{version}/exex-v#{version}-darwin-amd64.tar.gz"
-      sha256 "75d697fb126f5c1ae2f15ee9eb6d1f3301ce5c542d329c48bc1706e94ea7fab2"
+      sha256 "8321398e8c1517480fa951b1e7a8362f1fda88fb33403dd4bfbf417fc97595ba"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/shellcell/exex/releases/download/v#{version}/exex-v#{version}-linux-arm64.tar.gz"
-      sha256 "dd0ea08f1ce8d91bbf6560f6f2eea9fb31548ea1f3376da6f7b7cf5ba1855fd9"
+      sha256 "897337eed7b20beac91dbb3f5eb404b7779b8873cab6406df585b16ec20b033f"
     end
     on_intel do
       url "https://github.com/shellcell/exex/releases/download/v#{version}/exex-v#{version}-linux-amd64.tar.gz"
-      sha256 "b19c025e36f79c492143390bf04c4008da8a879d1fc6b234440a9a97f000f853"
+      sha256 "80c60feed69a24edc9eed34d7f1b0a56cd893789c85972686b3e21f2b56d058a"
     end
   end
 
