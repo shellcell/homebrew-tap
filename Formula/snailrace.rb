@@ -1,7 +1,7 @@
 class Snailrace < Formula
   desc "Benchmarking tool"
   homepage "https://github.com/shellcell/snailrace"
-  version "0.0.4"
+  version "0.0.5"
   license "MIT"
 
   livecheck do
@@ -12,24 +12,24 @@ class Snailrace < Formula
   on_macos do
     on_arm do
       url "https://github.com/shellcell/snailrace/releases/download/v#{version}/snailrace-v#{version}-darwin-arm64.tar.gz"
-      sha256 "c6c3fdee58fbfc862a54a2dfeb459b3d5b9283e3966803218f5336da943dce02"
+      sha256 "ef6277d2cee69c30a4bfce45ad512b1c762fa7c9767c4eb504405125e1977163"
     end
 
     on_intel do
       url "https://github.com/shellcell/snailrace/releases/download/v#{version}/snailrace-v#{version}-darwin-amd64.tar.gz"
-      sha256 "c1e376a49cf57e296eda8f2687caa1c93461d1a9586fbe81f34b6a91877c13aa"
+      sha256 "94bb5ebc504162b41d60e6b9467abf992d9fab38339f721a5cfc42753fa2f4ea"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/shellcell/snailrace/releases/download/v#{version}/snailrace-v#{version}-linux-arm64.tar.gz"
-      sha256 "728b1d42cd55cff85fe893bd66a245deae6c75469e2aca53303817acc1cfdd6f"
+      sha256 "320b53fef4087f1b6749604b98a8f16f36655312cefef1db05eef4da9d34d8b5"
     end
 
     on_intel do
       url "https://github.com/shellcell/snailrace/releases/download/v#{version}/snailrace-v#{version}-linux-amd64.tar.gz"
-      sha256 "321023cd201320143016a962f95ea06cb085de00f97379e3aa32f87cb3db3db5"
+      sha256 "28ea67c1849b697b87e444a606ba9e1d1a061259c51803d76882b9af8c165d00"
     end
   end
 
